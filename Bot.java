@@ -85,11 +85,11 @@ public class Bot
             long startTime = System.currentTimeMillis();
             for(String SecurityType: secruityTypes){
                 to_exchange.println(("ADD " + id + " " + SecurityType + " BUY" + " "+ buyPrice[id] +" "+ buyQuantity[id]).toUpperCase());
-                reply = from_exchange.readLine().trim();
-                System.err.printf("The exchange replied: %s\n", reply);
+                //reply = from_exchange.readLine().trim();
+                //System.err.printf("The exchange replied: %s\n", reply);
                 to_exchange.println(("ADD " + id + " " + SecurityType + " SELL" +" "+ sellPrice[id] +" "+ sellQuantity[id]).toUpperCase());
-                reply = from_exchange.readLine().trim();
-                System.err.printf("The exchange replied: %s\n", reply);
+                //reply = from_exchange.readLine().trim();
+                //System.err.printf("The exchange replied: %s\n", reply);
                 id++;
             } 
 
